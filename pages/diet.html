@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eat Right!</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <style>
+      #webinar {
+        display: flex;
+        flex-direction: row;
+        background-color: #f0d003;
+        width: 75%;
+        margin: 20px auto;
+        align-content: center;
+        /* display: block; */
+        padding: 25px;
+      }
+
+      form {
+        display: block;
+        width: 75%;
+      }
+
+      #eat_right_img {
+        width: 40%;
+        margin: 10px;
+      }
+
+      input {
+        background-color: #f0d003;
+        padding: 5px;
+        margin: 5px;
+        width: 85%;
+      }
+
+      #mailing_list{
+        margin: 0;
+        width: 10%;
+        
+      }
+
+      select {
+        background-color: #f0d003;
+        padding: 5px;
+        margin: 5px;
+        width: 90%;
+      }
+
+      #submit_btn {
+        width: 90%;
+        background-color: #f0d003;
+        border: 1px solid black;
+        padding: 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <section class="hero">
+        <nav>
+          <ul>
+            <li>
+              <a href="../index.html"
+                ><img
+                  src="../images/home_w.svg"
+                  style="height: 50px; vertical-align: middle"
+                />
+                Home</a
+              >
+            </li>
+            <li>
+              <a href="diet.html"
+                ><img
+                  src="../images/nutrition_w.svg"
+                  style="height: 50px; vertical-align: middle"
+                />Diet</a
+              >
+            </li>
+            <li>
+              <a href="exercise.html"
+                ><img
+                  src="../images/exercise_w.svg"
+                  style="height: 50px; vertical-align: middle"
+                />
+                Exercise</a
+              >
+            </li>
+            <li>
+              <a href="sleep.html"
+                ><img
+                  src="../images/bed_w.svg"
+                  style="height: 50px; vertical-align: middle"
+                />
+                Sleep</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <main class="diet_main">
+        <div class="diet_intro">
+          <h1>Eat Right!</h1>
+          <p>
+            Take a big step forward in your wellness journey by registering for our free <strong>"Eat Right, Feel Amazing"</strong> webinar!
+          </p>
+          <p style="margin-bottom: 50px;">Saturday, September 21, 2025 at 1 p.m. ET</p>
+          <div id="webinar">
+            <img
+              id="eat_right_img"
+              src="../images/eat-right-feel-amazing.gif"
+            />
+            
+            <form action="">
+              
+              <input type="text" placeholder="First Name" />
+              
+         
+              <input type="email" placeholder="Email" />
+        
+              <select>
+                <option>Location:</option>
+        	<option value="AL">Alabama</option>
+	<option value="AK">Alaska</option>
+	<option value="AZ">Arizona</option>
+	<option value="AR">Arkansas</option>
+	<option value="CA">California</option>
+	<option value="CO">Colorado</option>
+	<option value="CT">Connecticut</option>
+	<option value="DE">Delaware</option>
+	<option value="DC">District Of Columbia</option>
+	<option value="FL">Florida</option>
+	<option value="GA">Georgia</option>
+	<option value="HI">Hawaii</option>
+	<option value="ID">Idaho</option>
+	<option value="IL">Illinois</option>
+	<option value="IN">Indiana</option>
+	<option value="IA">Iowa</option>
+	<option value="KS">Kansas</option>
+	<option value="KY">Kentucky</option>
+	<option value="LA">Louisiana</option>
+	<option value="ME">Maine</option>
+	<option value="MD">Maryland</option>
+	<option value="MA">Massachusetts</option>
+	<option value="MI">Michigan</option>
+	<option value="MN">Minnesota</option>
+	<option value="MS">Mississippi</option>
+	<option value="MO">Missouri</option>
+	<option value="MT">Montana</option>
+	<option value="NE">Nebraska</option>
+	<option value="NV">Nevada</option>
+	<option value="NH">New Hampshire</option>
+	<option value="NJ">New Jersey</option>
+	<option value="NM">New Mexico</option>
+	<option value="NY">New York</option>
+	<option value="NC">North Carolina</option>
+	<option value="ND">North Dakota</option>
+	<option value="OH">Ohio</option>
+	<option value="OK">Oklahoma</option>
+	<option value="OR">Oregon</option>
+	<option value="PA">Pennsylvania</option>
+	<option value="RI">Rhode Island</option>
+	<option value="SC">South Carolina</option>
+	<option value="SD">South Dakota</option>
+	<option value="TN">Tennessee</option>
+	<option value="TX">Texas</option>
+	<option value="UT">Utah</option>
+	<option value="VT">Vermont</option>
+	<option value="VA">Virginia</option>
+	<option value="WA">Washington</option>
+	<option value="WV">West Virginia</option>
+	<option value="WI">Wisconsin</option>
+	<option value="WY">Wyoming</option>
+</select>
+
+
+              <h4>Join our mailing list:
+                <input id="mailing_list" type="checkbox">
+              </h4>
+
+              <button id="submit_btn">Submit</button>
+            </form>
+
+            
+          </div>
+        </div>
+        <aside class="diet_aside">
+          <img class="diet_img" src="../images/fruit.jpg" />
+        </aside>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #b0e8fd;
+  /* margin: 0 auto; */
+  padding: 50px 100px;
+}
+
+.page {
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hero {
+  width: 100%;
+  /* margin: 0 auto; */
+  border: none;
+}
+
+.hero .banner {
+  width: 100%;
+  object-fit: contain;
+}
+
+nav > ul {
+  display: flex;
+  list-style-type: none;
+  /* padding: 10px; */
+  background-color: #35bffb;
+  font-weight: bold;
+  margin: 0;
+  font-size: x-large;
+  align-content: center;
+  align-items: center;
+}
+
+li {
+  padding: 20px 50px;
+  width: 20%;
+}
+
+li:hover {
+  background-color: #b0e8fd;
+  padding: 20px 50px;
+  width: 20%;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* li a:hover {
+} */
+
+#main_content {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding-left: 20px;
+  box-sizing: border-box;
+  border: none;
+}
+
+#intro {
+  width: 60%;
+  padding-right: 20px;
+  border: none;
+}
+
+aside {
+  width: 40%;
+  background-color: #35bffb;
+  margin: 0;
+  padding: 10px 20px;
+  justify-self: flex-end;
+  color: white;
+  border: none;
+}
+
+.diet_main {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding-left: 20px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.diet_intro {
+  width: 40%;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+.diet_img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.diet_aside {
+  width: 60%;
+  background-color: white;
+}
+
+#calculate_btn {
+  width: 90%;
+  background-color: #a2cb7d;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+#moving_header {
+    transition: font-style 3s ease-in-out .5s;
+}
+
+#moving_header:hover {
+    font-style: italic;
+}
+
+#exercise_img {
+    width: 100%;
+  object-fit: cover;
+}
