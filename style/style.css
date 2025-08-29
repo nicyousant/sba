@@ -2,7 +2,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #b0e8fd;
   /* margin: 0 auto; */
-  padding: 50px 100px;
+  padding: 0px 100px;
+  margin-top:  0px;
 }
 
 /* styles the big container */
@@ -45,7 +46,7 @@ nav > ul {
 }
 
 /* Use of transition to change background color of nav bar items */
-li {
+nav li {
   background-color: #35bffb;
   padding: 30px 25px;
   width: 20%;
@@ -53,7 +54,7 @@ li {
 
 }
 
-li:hover {
+nav li:hover {
   background-color: #b0e8fd;
   padding: 30px 25px;
   width: 20%;
@@ -74,6 +75,7 @@ li a {
   box-sizing: border-box;
   border: none;
 }
+
 
 #sl_intro {
   width: 90%;
@@ -100,6 +102,23 @@ li a {
   justify-self: flex-end;
   color: white;
   border: 0px;
+}
+
+#index_aside ul  {
+  padding-left: 10px;
+  list-style-type: none;
+
+}
+
+#resources li {
+  padding-left: 0px;
+  padding-bottom: 12px;
+  transition: font-style 2s, font-weight 2s;
+}
+
+#resources li:hover {
+ font-style:italic;
+ font-weight: bold;
 }
 
 .diet_main {
@@ -154,14 +173,15 @@ li a {
 table {
   background-color:#A2CB7D;
   font-weight: bold;
-  width: 60%;
+  width: 75%;
   margin: 40px auto;
+  border-radius: 5%;
 }
 
 th {
-  background-color: white;
-  padding: 10px 0;
-  margin: ;
+  /* background-color: white; */
+  padding: 10px 20px;
+  /* margin: ; */
 }
 
 
@@ -171,16 +191,24 @@ td {
 }
 
 td input{
-  width: 25%;
+  width: 33%;
   font-weight: bold;
   color: black;
   margin: 10px 5px;
+}
+
+td input:hover {
+  background-color: #35bffb;
 }
 
 #calculate_btn {
   margin: 10px auto;
   font-weight: bold;
   width: 75%;
+ }
+
+#calculate_btn:hover {
+  background-color: #35bffb;
 }
 
 /* #bottom_row {
