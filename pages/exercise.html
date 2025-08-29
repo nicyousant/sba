@@ -15,65 +15,84 @@
               <a href="../index.html"
                 ><img
                   src="../images/home_w.svg"
-                  style="height: 50px; vertical-align: middle"
+                  class="nav_icons"
                 />
                 Home</a
+              >
+            </li>
+            
+            <li>
+              <a href="exercise.html"
+                ><img
+                  src="../images/exercise_w.svg"
+                  class="nav_icons"
+                />
+                Exercise</a
               >
             </li>
             <li>
               <a href="diet.html"
                 ><img
                   src="../images/nutrition_w.svg"
-                  style="height: 50px; vertical-align: middle"
-                />Diet</a
-              >
-            </li>
-            <li>
-              <a href="exercise.html"
-                ><img
-                  src="../images/exercise_w.svg"
-                  style="height: 50px; vertical-align: middle"
-                />
-                Exercise</a
+                  class="nav_icons"
+                />Nutrition</a
               >
             </li>
             <li>
               <a href="sleep.html"
                 ><img
                   src="../images/bed_w.svg"
-                  style="height: 50px; vertical-align: middle"
+                  class="nav_icons"
                 />
                 Sleep</a>
             </li>
           </ul>
         </nav>
+      <img
+          class="banner"
+          src="../images/weights.jpg"
+          alt="The word health spelled out using pills."
+        />
       </section>
-      <main class="diet_main">
-        <div class="diet_intro">
-          <h1 id="moving_header">Move Your Body!</h1>
-         
-            
-            <form style="background-color:#A2CB7D" action="#">
-              <h4>Calculate Your Body Mass Index (BMI)</h4>
-              <input type="number" placeholder="Feet" />
-              
-         
-              <input type="number" placeholder="Inches" />
+      <main id="main_content">
+        <div id="ex_intro">
+         <h1 id="moving_header">Move Your Body!</h1>
 
-            <input type="number" placeholder="lbs." />
 
-              
-           
-
-              <button id="calculate_btn">Calculate</button>
-            </form>
-
-           
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+            veniam porro non esse doloribus nam. Quasi odit cum aliquam ipsum.
+            Vitae possimus ipsum esse voluptates ut repudiandae aliquid rem eos?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit,
+            earum iure. Nobis aspernatur modi eos nam. Architecto, eveniet
+            fugiat modi veniam delectus exercitationem rerum deleniti, mollitia
+            magni laudantium beatae est?
+          </p>
         </div>
-        <aside class="diet_aside">
-          <img id="exercise_img" src="../images/equipment.jpg" />
+        <aside class="exercise_aside">
+          <!-- Table contains form to calculate BMI -->          
+         <table>
+            <form action="#">
+              <tr>
+                <th colspan="3">Calculate Your Body Mass Index (BMI)</th>
+              </tr>
+              <tr>
+                <td>Height: </td>
+                <td colspan="2"><input type="number" placeholder="Feet" /><input type="number" placeholder="Inches" /></td>
+           
+              </tr>
+              <tr>
+                <td>Weight: </td><td><input type="number" placeholder="lbs." /></td>
+              </tr>
+            <tr>
+              <td colspan="3" style="width:100%; text-align: center;"><button id="calculate_btn">Calculate</button></td>
+            </tr>    
+            </form>
+</table>
+<!-- End table containing BMI calculator form -->
+
         </aside>
       </main>
     </div>
-</body>
+  </body>
 </html>

@@ -4,27 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eat Right!</title>
+    <!-- External Stylesheet -->
     <link rel="stylesheet" href="../style/style.css" />
+
+    <!-- Internal Stylesheet -->
     <style>
+      .diet_banner{
+        width: 100%;
+  object-fit: cover;
+  border: none;
+      }
+
+      .diet_hero {
+  width: 100%;
+  margin: 0;
+  border: none;
+}
+
+#diet_content {
+  width: 100%;
+  margin: 0;
+  padding-left: 20px;
+  padding-top: 0px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  border: none;
+}
+      
       #webinar {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         background-color: #f0d003;
-        width: 75%;
+        width: 50%;
         margin: 20px auto;
         align-content: center;
         /* display: block; */
+        flex-wrap: wrap;
         padding: 25px;
+                border-radius: 10%;
+
       }
 
       form {
-        display: block;
+        /* display: block; */
+        display: flex;
+        flex-direction: column;
         width: 75%;
+        margin-bottom: 50px;
+        justify-content: center;
+        align-content: center;
       }
 
       #eat_right_img {
         width: 40%;
-        margin: 10px;
+        margin: 20px auto;
       }
 
       input {
@@ -48,77 +81,91 @@
       }
 
       #submit_btn {
-        width: 90%;
+        width: 50%;
         background-color: #f0d003;
         border: 1px solid black;
         padding: 5px;
+        margin: 10px auto;
       }
 
     </style>
   </head>
   <body>
     <div class="page">
-      <section class="hero">
+      <section class="diet_hero">
+        <!-- Begin Nav Bar -->
         <nav>
           <ul>
             <li>
               <a href="../index.html"
                 ><img
                   src="../images/home_w.svg"
-                  style="height: 50px; vertical-align: middle"
+                  class="nav_icons"
                 />
                 Home</a
               >
             </li>
-            <li>
-              <a href="diet.html"
-                ><img
-                  src="../images/nutrition_w.svg"
-                  style="height: 50px; vertical-align: middle"
-                />Diet</a
-              >
-            </li>
+           
             <li>
               <a href="exercise.html"
                 ><img
                   src="../images/exercise_w.svg"
-                  style="height: 50px; vertical-align: middle"
+                  class="nav_icons"
                 />
                 Exercise</a
+              >
+            </li>
+             <li>
+              <a href="diet.html"
+                ><img
+                  src="../images/nutrition_w.svg"
+                  class="nav_icons"
+                />Nutrition</a
               >
             </li>
             <li>
               <a href="sleep.html"
                 ><img
                   src="../images/bed_w.svg"
-                  style="height: 50px; vertical-align: middle"
+                  class="nav_icons"
                 />
                 Sleep</a
               >
             </li>
           </ul>
         </nav>
+        <!-- End Nav Bar -->
+    
+     
+<img
+          class="diet_banner"
+          src="../images/fruit_cropped.jpg"
+          alt="The word health spelled out using pills."
+        />
       </section>
-      <main class="diet_main">
-        <div class="diet_intro">
-          <h1>Eat Right!</h1>
+      <main id="diet_content">
+        <h1>Eat Right!</h1>
           <p>
             Take a big step forward in your wellness journey by registering for our free <strong>"Eat Right, Feel Amazing"</strong> webinar!
           </p>
+          <!-- Inline CSS below -->
           <p style="margin-bottom: 50px;">Saturday, September 21, 2025 at 1 p.m. ET</p>
           <div id="webinar">
+
+          <!-- Animated GIF below -->
+          
             <img
               id="eat_right_img"
               src="../images/eat-right-feel-amazing.gif"
             />
-            
+            <!-- Form to register for webinar  -->
             <form action="">
               
               <input type="text" placeholder="First Name" />
               
          
               <input type="email" placeholder="Email" />
-        
+        <!-- Dropdown Menu -->
               <select>
                 <option>Location:</option>
         	<option value="AL">Alabama</option>
@@ -182,13 +229,16 @@
               <button id="submit_btn">Submit</button>
             </form>
 
-            
-          </div>
-        </div>
-        <aside class="diet_aside">
-          <img class="diet_img" src="../images/fruit.jpg" />
-        </aside>
+
       </main>
     </div>
   </body>
 </html>
+
+
+
+
+
+
+
+
